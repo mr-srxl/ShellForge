@@ -160,7 +160,10 @@ int main() {
 When the **Execute** option is enabled, the code additionally maps executable memory with `VirtualAlloc` and calls the shellcode.
 
 ---
-
+> **⚡ Design Intent – Obfuscation, Not Evasion**  
+> ShellForge was built with a single goal: **transform raw shellcode into benign‑looking C representations** that evade static signature detection and string‑based analysis.  
+> It does **not** implement runtime evasion techniques (AMSI patching, ETW unhooking, syscall obfuscation, etc).
+---
 ## Compiling the Generated C Code
 
 The generated C files are **Windows‑specific** and must be compiled with a toolchain that provides the necessary system libraries.
@@ -185,4 +188,6 @@ gcc program.c -o program.exe -lrpcrt4 -lws2_32
 ## Why ShellForge?
 
 # Just Try It
+
+
 

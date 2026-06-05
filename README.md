@@ -27,7 +27,6 @@ Designed for red‑team operators, penetration testers, and malware analysts who
 ## Features
 
 - **15 Obfuscation Methods** – Choose from pure encryption (XOR, RC4, AES), pure encoding (UUID, MAC, IPv4, IPv6), or combined techniques (RC4+UUID, XOR+Base64, etc.).
-- **Multi‑Line Array Output** – Prevents text‑widget crashes with large shellcode; arrays are automatically formatted for readability.
 - **Dual Operation Mode** – Generate code that either **prints the decrypted shellcode as hex** (safe extraction) or **executes it directly** via `VirtualAlloc` on Windows.
 - **Per‑Technique Controls** – Each tab allows custom key/IV entry, random key generation, and an instant preview of the encoded data.
 - **Syntax‑Highlighted C Code** – The generated code appears with full C‑style syntax highlighting inside the GUI.
